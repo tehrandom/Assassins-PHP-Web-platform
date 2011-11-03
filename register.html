@@ -1,0 +1,41 @@
+<html>
+    <script type="text/javascript">
+<!--
+function dropdown(mySel)
+{
+var myWin, myVal;
+myVal = mySel.options[mySel.selectedIndex].value;
+if(myVal)
+   {
+   if(mySel.form.target)myWin = parent[mySel.form.target];
+   else myWin = window;
+   if (! myWin) return true;
+   myWin.location = myVal;
+   }
+return false;
+}
+//-->
+</script>
+<div id="ys" class="ct fc">
+<center>
+<form method="post" action="register.php">
+This is the Registration page for Exeter Assassins Guild, all entries are noted and will be removed if invalid.<br>
+Email furnival.t@gmail.com for further information.<br>
+<p>Name: <br />
+<input name="Name" type="text" /></p>
+<p>Email Address:<br />
+<input name="Email" type="text" /><br />
+<p>Password:<br />
+<input name="Password" type="password" /><br />
+<p>Will you allow the usage of water weapons?<br>
+<select name="Water">
+<option value="1">Yes</option>
+<option value="0">No</option></select></p>
+<p>Image (For now, enter URL of upload)<br />
+<input name="Image" type="text" /></p>
+<p>Course:<br />
+<input name="Course" type="text" /></p>
+<p>Approximate location (Street etc):<br />
+<textarea name="Location" rows="10" cols="40"></textarea></p>
+<p><input name="submit" value="Submit" type="submit" /></p></form></center></div>
+</html>

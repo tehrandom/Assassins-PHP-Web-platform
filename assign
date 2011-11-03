@@ -1,0 +1,16 @@
+<?php
+
+$query="SELECT codeid FROM users WHERE 1 ORDER BY rand()";
+$result=mysql_query($query);
+$names=array();
+$i=0;
+while($row = mysql_fetch_assoc($result,MYSQL_ASSOC))
+{
+$names[$i]=$row['codeid'];
+$i++;
+}
+
+var_dump($names);
+
+
+?>
